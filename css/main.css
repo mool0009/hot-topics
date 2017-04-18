@@ -1,0 +1,236 @@
+/* comment in colors here 
+#FFBE00
+#E89200
+#FF8000
+#E85700
+#FF2E00
+*/
+
+
+/* fonts:
+font-family: 'Quattrocento', serif;
+font-family: 'Quattrocento Sans', sans-serif;
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #FF8000;
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-size: 0.618rem;
+	line-height: 1.4;
+}
+
+figure {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	margin-top: 5px;
+}
+
+.wrapper {
+	max-width: 100rem;
+}
+
+h2 {
+	color: #FFBE00;
+}
+
+.bg-header,
+h2 {
+	text-align: center;
+}
+
+.logopic {
+	width: 90px;
+	height: auto;
+	margin: auto;
+}
+
+.navbar {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.navbar li {
+	display: inline;
+}
+
+.navbar li a {
+	display: block;
+	background-color: #FF2E00;
+	color: #FFBE00;
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+	margin: 0 0 3px 0;
+}
+
+.navbar li a:hover {
+	background-color: #E89200;
+}
+
+.navbar li:last-child a {
+	margin: 0;
+}
+
+.masthead-bg {
+	background-image: url(../img/masthead-bg.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.masthead-bg h1 {
+	margin: 0;
+	padding: 2rem 0;
+	color: black;
+	font-family: 'Quattrocento', serif;
+}
+
+footer {
+	background-color: #FF2E00;
+	text-align: center;
+	color: #FF2E00;
+}
+
+.social-media a {
+	text-decoration: none;
+}
+
+
+/*form*/
+
+input,
+textarea {
+	width: 95%;
+	margin: 2px;
+	padding: 4px;
+	color: #FF2E00;
+}
+
+form {
+	text-align: center;
+}
+
+
+/*Tablet View */
+
+@media screen and (min-width: 35rem) and (max-width: 80rem) {
+	.navbar li {
+		display: block;
+		float: left;
+		width: 48%;
+		margin: 1%;
+	}
+	.navbar li:last-child {
+		margin-right: 0;
+	}
+	.money figure {
+		float: left;
+	}
+	.gmo {
+		clear: both;
+	}
+	img {
+		padding: 20px;
+	}
+	h2 {
+		text-align: center;
+	}
+	body {
+		font-size: 1rem;
+	}
+	/*form*/
+	textarea {
+		float: right;
+		width: 58%;
+		height: 100px;
+		margin-top:-75px;
+		margin-right:10px;
+	}
+	input {
+		clear: both;
+		float: left;
+		margin: 2px;
+		padding: 4px;
+		width: 40%;
+	}
+	
+	.feedback {
+		clear: both;
+	}
+}
+
+
+/* Desktop View */
+
+@media screen and (min-width: 80rem) {
+	.navbar li {
+		display: block;
+		float: left;
+		text-align: center;
+		width: 19.2%;
+		margin: 1%;
+		padding-top: 20px;
+	}
+	.navbar li:last-child {
+		margin-right: 0;
+	}
+	.logo {
+		float: left;
+	}
+	body {
+		font-size: 1.618rem;
+	}
+	.money figure {
+		float: left;
+		padding: 10px;
+	}
+	.gmo {
+		clear: both;
+		float: left;
+		width: 50%;
+		padding: 10px;
+	}
+	.theworld {
+		float: right;
+		width: 50%;
+		padding: 10px;
+	}
+	footer {
+		text-align: left;
+	}
+	
+/*form*/	
+	
+	.feedback {
+		clear: both;
+	}
+	textarea {
+		float: right;
+		width: 55%;
+		height: 100px;
+		margin-top:-110px;
+		margin-right:10px;
+	}
+	input {
+		clear: both;
+		float: left;
+		margin: 2px;
+		padding: 4px;
+		width: 40%;
+	}
+
+}
